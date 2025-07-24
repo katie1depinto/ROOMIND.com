@@ -12,6 +12,16 @@ body, h1, p { margin: 0; padding: 0; }
   background: #f0f4f8;
   min-height: 100vh;
 }
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("generate an image si.png"); /* replace with your actual file name */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 .age-selector .age-btn {
   display: inline-block;
   margin: 10px;
