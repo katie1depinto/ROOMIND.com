@@ -16,7 +16,7 @@ body, h1, p { margin: 0; padding: 0; }
 body {
   margin: 0;
   padding: 0;
-  background-image: url("generate an image si.png"); /* replace with your actual file name */
+  background-image: url("generate-an-image-si.png"); /* replace with your actual file name */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
