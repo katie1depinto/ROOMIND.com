@@ -16,3 +16,35 @@ header, footer {
 main {
   padding: 2em;
 }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header, main, footer {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #5c6ac4;
+  text-align: center;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+footer {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 50px;
+  color: #777;
+}
