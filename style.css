@@ -46,14 +46,6 @@ body {
   margin-top: 60px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) 
 }
-.option {
-  padding: 12px 20px;
-  border: 2px solid #A3D9C6;
-  background-color: #DDEFE4;
-  color: #333;
-  border-radius: 8px;
-  font-family: 'Segoe UI', sans-serif;
-  transition: all 0.3s ease;
   .options .option {
   padding: 12px 20px;
   border: 2px solid #FBE7A1;
