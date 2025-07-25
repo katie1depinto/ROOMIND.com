@@ -54,6 +54,11 @@ body {
   border-radius: 8px;
   font-family: 'Segoe UI', sans-serif;
   transition: all 0.3s ease;
+  .options .option {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
 }
 .option:hover {
   background: #DDEFE4;
