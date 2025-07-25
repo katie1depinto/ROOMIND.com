@@ -12,7 +12,7 @@ body, h1, p { margin: 0; padding: 0; }
   background: #E6E6FA;
   min-height: 100vh;
 .age-label {
-  font-size: 20px; /* You can adjust this to any size you want */
+  font-size: 80px; /* You can adjust this to any size you want */
   font-weight: bold; /* Optional, makes the text bolder */
   margin-bottom: 10px; /* Optional, adds space below the label */
 }
