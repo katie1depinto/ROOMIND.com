@@ -31,8 +31,7 @@ body {
 .age-selector .age-btn {
   display: inline-block;
   margin: 10px;
-  padding: 85px 95px;
-  background: #FFEE8C;
+  padding: 85px 95px
   color: light blue;
   text-decoration: none;
   border-radius: 15px;
