@@ -67,6 +67,7 @@ body {
 .adult {
   font-family: 'Segoe UI', sans-serif;
   background: (circle at top left, #FFEE8C, #f7faff);
+  font-size: 8vh
 }
 .adult h1, .adult p {
   font-family: 'Quicksand', quicksand;
@@ -77,12 +78,14 @@ body {
 .teen {
   font-family: 'Segoe UI', sans-serif;
   background: #FFEE8C;
+  font-size: 8vh 
 }
 
 /* CHILD: same font but bold + soft pastel gradient */
 .child {
   font-family: 'Segoe UI', sans-serif;
   background: circular-gradient(to bottom, #fff1f0, #f0fff4);
+  font-size: 8vh 
 }
 .child h1, .child p, .child .option {
   font-weight: bold;
