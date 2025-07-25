@@ -7,16 +7,16 @@ body, h1, p { margin: 0; padding: 0; }
   text-align: center;
 }
 .age-label {
-  font-size: 20px; /* You can adjust this to any size you want */
+  font-size: 100px; /* You can adjust this to any size you want */
   font-weight: bold; /* Optional, makes the text bolder */
-  margin-bottom: 10px; /* Optional, adds space below the label */
+  margin-bottom: 20px; /* Optional, adds space below the label */
 }
 /* Landing page */
 .landing {
   background: #E6E6FA;
   min-height: 100vh;
   #welcome-text {
-  font-size: 8vw;      /* Viewport-based sizing to scale with screen width */
+  font-size: 5vw;      /* Viewport-based sizing to scale with screen width */
   text-align: center;   /* Center text horizontally */
   margin-top: 10vh;     /* Space from the top of the page */
   font-weight: bold;    /* Make it stand out */
