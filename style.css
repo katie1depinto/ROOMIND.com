@@ -47,8 +47,7 @@ body {
 }
 .options .option {
   background: linear-gradient(to right, #fff7cc, #fef8e7);
-  color: #333;
-  border: 1px solid #f0d97d;
+  border: 5px
   padding: 10px;
   border-radius: 8px;
   transition: background 0.3s ease;
