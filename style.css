@@ -11,9 +11,7 @@ body, h1, p { margin: 0; padding: 0; }
 .landing {
   background: #E6E6FA;
   min-height: 100vh;
- <p> {
-   font-size: 6vw;
-   text-alight: center;
+<p class="age-label">Please select your age category:</p> 
   #welcome-text {
   font-size: 10vw;      /* Viewport-based sizing to scale with screen width */
   text-align: center;   /* Center text horizontally */
