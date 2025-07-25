@@ -31,7 +31,7 @@ body {
 .age-selector .age-btn {
   display: inline-block;
   margin: 10px;
-  padding: 95px 105px;
+  padding: 85px 95px;
   background: #FFEE8C;
   color: light blue;
   text-decoration: none;
@@ -44,6 +44,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   margin-top: 60px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) 
 }
 .option {
   padding: 40px;
@@ -53,7 +54,7 @@ body {
   transition: background 0.3s, border-color 0.3s;
 }
 .option:hover {
-  background: #FFEE8C;
+  background: #DDEFE4;
   border-color: #FFEE8C;
 }
 
