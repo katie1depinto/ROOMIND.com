@@ -1,48 +1,59 @@
 /* Shared container + reset */
-body, h1, p { margin: 0; padding: 0; }
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   max-width: 800px;
   margin: auto;
   padding: 20px;
   text-align: center;
 }
+
+/* Age Label */
 .age-label {
-  font-size: 3vw; /* You can adjust this to any size you want */
-  font-weight: bold; /* Optional, makes the text bolder */
-  margin-bottom: 20px; /* Optional, adds space below the label */
+  font-size: 100px;     /* Adjust to suit your layout */
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
 }
-/* Landing page */
+
+/* Landing page background */
 .landing {
   background: #E6E6FA;
   min-height: 100vh;
 }
 
+/* Welcome Text */
 #welcome-text {
-  font-size: 8vw;
+  font-size: 5vw;
   text-align: center;
   margin-top: 10vh;
   font-weight: bold;
 }
+
+/* Page background image */
 body {
-  margin: 0;
-  padding: 0;
-  background-image: url("generate an image si.png"); /* replace with your actual file name */
+  background-image: url("generate an image si.png"); /* Replace with actual file name */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vw;
+  height: 100vh;
 }
+
+/* Age Selector Buttons */
 .age-selector .age-btn {
   display: inline-block;
   margin: 10px;
   padding: 85px 95px;
-  color: #ADD8E6;
+  color: lightblue;               /* Use valid CSS color name */
   text-decoration: none;
   border-radius: 15px;
-  font-size: 4vw
 }
 
-/* Options “buttons” */
+/* Options Grid */
 .options {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -50,9 +61,10 @@ body {
   margin-top: 60px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .options .option {
   background: linear-gradient(to right, #fff7cc, #fef8e7);
-  border: 5px solid #ccc; 
+  border: 5px solid #ccc;
   padding: 10px;
   border-radius: 8px;
   transition: background 0.3s ease;
@@ -62,31 +74,36 @@ body {
   background: linear-gradient(to right, #fff2aa, #fdecb2);
 }
 
-/* Age-specific tweaks */
+/* Age-specific Themes */
 
 /* ADULT: rounded font, aura background */
 .adult {
   font-family: 'Segoe UI', sans-serif;
-background: radial-gradient(circle at top left, #FFEE8C, #f7faff); 
-  font-size: 5vw
+  background: radial-gradient(circle at top left, #FFEE8C, #f7faff);
+  font-size: 5vw;   /* Use viewport-based font size */
 }
+
 .adult h1, .adult p {
-  font-family: 'Quicksand', quicksand;
+  font-family: 'Quicksand', sans-serif;
   border-radius: 10px;
 }
 
-/* TEENAGER: same font, light blue background */
+/* TEENAGER: same font, light yellow background */
 .teen {
   font-family: 'Segoe UI', sans-serif;
   background: #FFEE8C;
-  font-size: 5vw 
+  font-size: 5vw;
 }
 
-/* CHILD: same font but bold + soft pastel gradient */
+/* CHILD: bold font with soft pastel gradient */
 .child {
   font-family: 'Segoe UI', sans-serif;
-background: linear-gradient(to bottom, #fff1f0, #f0fff4);
+  background: linear-gradient(to bottom, #fff1f0, #f0fff4);
+  font-size: 5vw;
 }
+
 .child h1, .child p, .child .option {
   font-weight: bold;
 }
+
+
