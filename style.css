@@ -9,7 +9,7 @@ body, h1, p { margin: 0; padding: 0; }
 
 /* Landing page */
 .landing {
-  background: #f0f4f8;
+  background: #E6E6FA;
   min-height: 100vh;
   #welcome-text {
   font-size: 5vw;      /* Viewport-based sizing to scale with screen width */
@@ -62,11 +62,11 @@ body {
 /* ADULT: rounded font, aura background */
 .adult {
   font-family: 'Segoe UI', sans-serif;
-  background: radial-gradient(circle at top left, #e8f0fe, #f7faff);
+  background: (circle at top left, #e8f0fe, #f7faff);
 }
 .adult h1, .adult p {
-  font-family: 'Segoe UI', sans-serif;
-  border-radius: 4px;
+  font-family: 'Quicksand', quicksand;
+  border-radius: 10px;
 }
 
 /* TEENAGER: same font, light blue background */
