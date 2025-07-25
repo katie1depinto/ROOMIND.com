@@ -46,21 +46,17 @@ body {
   margin-top: 60px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) 
 }
-  .options .option {
-  padding: 12px 20px;
-  border: 2px solid #FBE7A1;
-  background: linear-gradient(to bottom right, #FFF9D6, #FBE7A1);
-  color: #444;
+.options .option {
+  background: linear-gradient(to right, #fff7cc, #fef8e7);
+  color: #333;
+  border: 1px solid #f0d97d;
+  padding: 10px;
   border-radius: 8px;
-  font-family: 'Segoe UI', sans-serif;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
 }
-}
-}
-.option:hover {
-  background: #DDEFE4;
-  border-color: #FFEE8C;
+
+.options .option:hover {
+  background: linear-gradient(to right, #fff2aa, #fdecb2);
 }
 
 /* Age-specific tweaks */
