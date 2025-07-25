@@ -47,11 +47,13 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) 
 }
 .option {
-  padding: 40px;
-  border: 2px solid #ccc;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: background 0.3s, border-color 0.3s;
+  padding: 12px 20px;
+  border: 2px solid #A3D9C6;
+  background-color: #DDEFE4;
+  color: #333;
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  transition: all 0.3s ease;
 }
 .option:hover {
   background: #DDEFE4;
