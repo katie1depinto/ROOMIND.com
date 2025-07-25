@@ -25,7 +25,7 @@ body {
 .age-selector .age-btn {
   display: inline-block;
   margin: 10px;
-  padding: 15px 25px;
+  padding: 35px 45px;
   background: #5c6ac4;
   color: white;
   text-decoration: none;
@@ -40,7 +40,7 @@ body {
   margin-top: 40px;
 }
 .option {
-  padding: 20px;
+  padding: 40px;
   border: 2px solid #ccc;
   border-radius: 12px;
   cursor: pointer;
