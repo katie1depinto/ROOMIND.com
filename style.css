@@ -16,14 +16,13 @@ body, h1, p { margin: 0; padding: 0; }
   background: #E6E6FA;
   min-height: 100vh;
 }
-  #welcome-text {
-  font-size: 5vw;      /* Viewport-based sizing to scale with screen width */
-  text-align: center;   /* Center text horizontally */
-  margin-top: 10vh;     /* Space from the top of the page */
-  font-weight: bold;    /* Make it stand out */
+
+#welcome-text {
+  font-size: 8vw;
+  text-align: center;
+  margin-top: 10vh;
+  font-weight: bold;
 }
-}
-<style>
 body {
   margin: 0;
   padding: 0;
@@ -31,13 +30,13 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100vw;
 }
 .age-selector .age-btn {
   display: inline-block;
   margin: 10px;
-  padding: 85px 95px
-  color: light blue;
+  padding: 85px 95px;
+  color: #ADD8E6;
   text-decoration: none;
   border-radius: 15px;
 }
@@ -48,11 +47,11 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   margin-top: 60px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .options .option {
   background: linear-gradient(to right, #fff7cc, #fef8e7);
-  border: 5px
+  border: 5px solid #ccc; 
   padding: 10px;
   border-radius: 8px;
   transition: background 0.3s ease;
@@ -67,8 +66,8 @@ body {
 /* ADULT: rounded font, aura background */
 .adult {
   font-family: 'Segoe UI', sans-serif;
-  background: (circle at top left, #FFEE8C, #f7faff);
-  font-size: 100vh
+background: radial-gradient(circle at top left, #FFEE8C, #f7faff); 
+  font-size: 5vw
 }
 .adult h1, .adult p {
   font-family: 'Quicksand', quicksand;
@@ -79,14 +78,13 @@ body {
 .teen {
   font-family: 'Segoe UI', sans-serif;
   background: #FFEE8C;
-  font-size: 100vh 
+  font-size: 5vw 
 }
 
 /* CHILD: same font but bold + soft pastel gradient */
 .child {
   font-family: 'Segoe UI', sans-serif;
-  background: circular-gradient(to bottom, #fff1f0, #f0fff4);
-  font-size: 100vh 
+background: linear-gradient(to bottom, #fff1f0, #f0fff4);
 }
 .child h1, .child p, .child .option {
   font-weight: bold;
