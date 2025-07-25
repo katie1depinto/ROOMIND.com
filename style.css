@@ -6,7 +6,11 @@ body, h1, p { margin: 0; padding: 0; }
   padding: 20px;
   text-align: center;
 }
-
+.age-label {
+  font-size: 20px; /* You can adjust this to any size you want */
+  font-weight: bold; /* Optional, makes the text bolder */
+  margin-bottom: 10px; /* Optional, adds space below the label */
+}
 /* Landing page */
 .landing {
   background: #E6E6FA;
