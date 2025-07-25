@@ -11,6 +11,12 @@ body, h1, p { margin: 0; padding: 0; }
 .landing {
   background: #f0f4f8;
   min-height: 100vh;
+  #welcome-text {
+  font-size: 5vw;      /* Viewport-based sizing to scale with screen width */
+  text-align: center;   /* Center text horizontally */
+  margin-top: 10vh;     /* Space from the top of the page */
+  font-weight: bold;    /* Make it stand out */
+}
 }
 <style>
 body {
