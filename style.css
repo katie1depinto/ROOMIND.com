@@ -7,7 +7,7 @@ body, h1, p { margin: 0; padding: 0; }
   text-align: center;
 }
 .age-label {
-  font-size: 100px; /* You can adjust this to any size you want */
+  font-size: 3vw; /* You can adjust this to any size you want */
   font-weight: bold; /* Optional, makes the text bolder */
   margin-bottom: 20px; /* Optional, adds space below the label */
 }
@@ -39,6 +39,7 @@ body {
   color: #ADD8E6;
   text-decoration: none;
   border-radius: 15px;
+  font-size: 4vw
 }
 
 /* Options “buttons” */
