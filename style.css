@@ -12,7 +12,7 @@ body, h1, p { margin: 0; padding: 0; }
   background: #E6E6FA;
   min-height: 100vh;
   #welcome-text {
-  font-size: 4vw;      /* Viewport-based sizing to scale with screen width */
+  font-size: 6vw;      /* Viewport-based sizing to scale with screen width */
   text-align: center;   /* Center text horizontally */
   margin-top: 10vh;     /* Space from the top of the page */
   font-weight: bold;    /* Make it stand out */
@@ -32,7 +32,7 @@ body {
   display: inline-block;
   margin: 10px;
   padding: 95px 105px;
-  background: #E6E6FA;
+  background: #FFEE8C;
   color: light blue;
   text-decoration: none;
   border-radius: 15px;
