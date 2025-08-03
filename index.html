@@ -2,17 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Age Verification</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roomind Cover</title>
+  <!-- Make sure this path matches your folder structure -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <section class="cover">
-    <h1 class="cover-title">Are you 18 or older?</h1>
-    <div class="cover-buttons">
-      <a href="main.html" class="btn yes">Yes</a>
-      <a href="underage.html" class="btn no">No</a>
+
+  <div class="screen">
+    <div class="title">Roomind</div>
+    <div class="subtitle">
+      your privacy promised<br>
+      AI therapist<br>
+      Select your age category
     </div>
-  </section>
+
+    <div class="buttons">
+      <button class="button" onclick="selectCategory('child')">child</button>
+      <button class="button" onclick="selectCategory('teen')">teen</button>
+      <button class="button" onclick="selectCategory('adult')">adult</button>
+    </div>
+  </div>
+
+  <script>
+    function selectCategory(category) {
+      alert('You selected: ' + category);
+    }
+  </script>
+
 </body>
 </html>
