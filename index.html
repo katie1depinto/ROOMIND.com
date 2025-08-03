@@ -2,72 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Roomind</title>
-  <style>
-    /* Base & Reset */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    
-    body {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #f9f7f6;             /* Very light pastel */
-      font-family: 'Segoe UI', sans-serif;
-      color: #333;
-    }
-
-    /* The “screen” */
-    .screen {
-      width: 360px;
-      padding: 24px;
-      background: #ffffff;
-      border: 3px solid #cfcfcf;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      transition: border-color 0.3s, box-shadow 0.3s;
-    }
-    .screen:hover {
-      border-color: #8fbfe0;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-    }
-
-    /* Title & Subtitle */
-    .title {
-      font-size: 2rem;
-      font-weight: 600;
-      margin-bottom: 8px;
-    }
-    .subtitle {
-      font-size: 0.95rem;
-      line-height: 1.4;
-      margin-bottom: 24px;
-      color: #666;
-    }
-
-    /* Buttons Layout */
-    .buttons {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-    }
-    .button {
-      flex: 1;
-      padding: 12px 0;
-      border: 2px solid #cfcfcf;
-      border-radius: 8px;
-      background: #eef2f5;            /* Light pastel */
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s, border-color 0.3s;
-    }
-    .button:hover {
-      background: #d4e4f1;
-      border-color: #8fbfe0;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roomind Cover</title>
+  <!-- Make sure this path matches your folder structure -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -88,12 +26,9 @@
 
   <script>
     function selectCategory(category) {
-      // Smooth transition to the next section (replace with real routing)
-      console.log('Selected:', category);
-      // e.g., window.location.href = category + '.html';
       alert('You selected: ' + category);
     }
   </script>
 
 </body>
-</html>
+</html></html>
