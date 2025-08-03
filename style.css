@@ -1,93 +1,29 @@
-/* Theme variables */
-:root {
-  --font-sans: 'Poppins', sans-serif;
-  --color-primary: #4a90e2;
-  --color-secondary: #2c3e50;
-  --color-light: #ffffff;
-  --gradient-bg: linear-gradient(135deg, #4a90e2 0%, #9013fe 100%);
-}
-
-/* Reset & global */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: var(--font-sans);
-  color: var(--color-secondary);
-  background: var(--gradient-bg) fixed center/cover no-repeat;
-  opacity: 0;
-  transition: opacity 0.8s ease-out;
-  line-height: 1.6;
-}
-
-body.loaded {
-  opacity: 1;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Navigation */
-.nav {
-  position: absolute;
-  width: 100%;
-  top: 0; left: 0;
-  z-index: 10;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0;
-}
-
-.nav-brand {
-  font-size: 1.5rem;
-  font-weight: 600;
+.hero-title {
+  font-size: 4rem;
   color: var(--color-light);
-  text-decoration: none;
+  margin-bottom: 1rem;
 }
 
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--color-light);
+  margin-bottom: 2rem;
 }
 
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  content: '';
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: var(--color-light);
-  transition: transform 0.3s ease;
+.age-selector {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.hamburger::before {
-  transform: translateY(-8px);
+.age-btn {
+  padding: 1.2rem 3rem;
+  font-size: 1.2rem;
+  border-radius: 40px;
+  background: var(--color-light);
+  color: var(--color-secondary);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.hamburger::after {
-  transform: translateY(5px);
-}
-
-.nav-toggle_active .hamburger {
-  background: transparent;
-}
-
-.nav-toggle_active
-}
-
-
+.age-btn:hover {
+  transform: translate
