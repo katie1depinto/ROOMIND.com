@@ -1,11 +1,34 @@
-<section class="hero">
-  <div class="container hero-content">
-    <h1 class="hero-title">Welcome to Roomind</h1>
-    <p class="hero-subtitle">Choose your age category to explore personalized support.</p>
-    <div class="age-selector">
-      <a href="adult.html" class="age-btn">Adult</a>
-      <a href="teen.html" class="age-btn">Teenager</a>
-      <a href="child.html" class="age-btn">Child</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roomind</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="screen">
+    <div class="title">Roomind</div>
+    <div class="subtitle">
+      your privacy promised<br>
+      AI therapist<br>
+      Select your age category
+    </div>
+
+    <div class="buttons">
+      <button class="button" onclick="selectCategory('child')">child</button>
+      <button class="button" onclick="selectCategory('teen')">teen</button>
+      <button class="button" onclick="selectCategory('adult')">adult</button>
     </div>
   </div>
-</section>
+
+  <script>
+    function selectCategory(category) {
+      alert('You selected: ' + category);
+      // In the future, route to child.html / teen.html / adult.html, etc.
+    }
+  </script>
+
+</body>
+</html>
