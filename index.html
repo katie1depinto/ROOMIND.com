@@ -2,35 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Inline fallback styles (optional if already in style.css) */
-    body {
-      margin: 0;
-      padding: 0;
-      background-image: url("generate-an-image-si.png"); /* Check file name path */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh;
-    }
-  </style>
+  <title>Roomind Landing</title>
 </head>
-<body class="landing">
-  <div class="container">
-    <header>
-      <h1 id="welcome-text">Welcome to Roomind</h1>
-    </header>
-    <p class="age-label">Please select your age category:</p>
-    <nav class="age-selector">
-      <a href="adult.html" class="age-btn">Adult</a>
-      <a href="teen.html" class="age-btn">Teenager</a>
-      <a href="child.html" class="age-btn">Child</a>
-    </nav>
-  </div>
+<body>
+  <nav class="nav">
+    <div class="container nav-container">
+      <a href="#" class="nav-brand">Roomind</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Welcome to Roomind</h1>
+      <p>Choose your age category to explore tailored experiences.</p>
+      <div class="age-selector">
+        <a href="adult.html" class="age-btn">Adult</a>
+        <a href="teen.html" class="age-btn">Teenager</a>
+        <a href="child.html" class="age-btn">Child</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Roomind. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
