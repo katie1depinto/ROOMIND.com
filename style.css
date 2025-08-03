@@ -1,29 +1,65 @@
-.hero-title {
-  font-size: 18rem;
-  color: var(--color-light);
-  margin-bottom: 1rem;
-}
+/* Reset & base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-.hero-subtitle {
-  font-size: 10rem;
-  color: var(--color-light);
-  margin-bottom: 2rem;
-}
-
-.age-selector {
+body {
+  height: 100vh;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  align-items: center;
+  background: #f9f7f6;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
 }
 
-.age-btn {
-  padding: 1.2rem 3rem;
-  font-size: 1.2rem;
-  border-radius: 40px;
-  background: var(--color-light);
-  color: var(--color-secondary);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+/* Cover “screen” */
+.screen {
+  width: 360px;
+  padding: 24px;
+  background: #ffffff;
+  border: 3px solid #cfcfcf;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.screen:hover {
+  border-color: #8fbfe0;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
-.age-btn:hover {
-  transform: translate
+/* Text styles */
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 24px;
+  color: #666;
+}
+
+/* Buttons layout */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.button {
+  flex: 1;
+  padding: 12px 0;
+  border: 2px solid #cfcfcf;
+  border-radius: 8px;
+  background: #eef2f5;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.button:hover {
+  background: #d4e4f1;
+  border-color: #8fbfe0;
+}
