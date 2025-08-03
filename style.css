@@ -1,109 +1,93 @@
-/* Shared container + reset */
-body, h1, p {
+/* Theme variables */
+:root {
+  --font-sans: 'Poppins', sans-serif;
+  --color-primary: #4a90e2;
+  --color-secondary: #2c3e50;
+  --color-light: #ffffff;
+  --gradient-bg: linear-gradient(135deg, #4a90e2 0%, #9013fe 100%);
+}
+
+/* Reset & global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.container {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Age Label */
-.age-label {
-  font-size: 100px;     /* Adjust to suit your layout */
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-/* Landing page background */
-.landing {
-  background: #E6E6FA;
-  min-height: 100vh;
-}
-
-/* Welcome Text */
-#welcome-text {
-  font-size: 5vw;
-  text-align: center;
-  margin-top: 10vh;
-  font-weight: bold;
-}
-
-/* Page background image */
 body {
-  background-image: url("generate an image si.png"); /* Replace with actual file name */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
+  font-family: var(--font-sans);
+  color: var(--color-secondary);
+  background: var(--gradient-bg) fixed center/cover no-repeat;
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+  line-height: 1.6;
 }
 
-/* Age Selector Buttons */
-.age-selector .age-btn {
-  display: inline-block;
-  margin: 10px;
-  padding: 85px 95px;
-  color: lightblue;               /* Use valid CSS color name */
+body.loaded {
+  opacity: 1;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.nav {
+  position: absolute;
+  width: 100%;
+  top: 0; left: 0;
+  z-index: 10;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-light);
   text-decoration: none;
-  border-radius: 15px;
 }
 
-/* Options Grid */
-.options {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  margin-top: 60px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-.options .option {
-  background: linear-gradient(to right, #fff7cc, #fef8e7);
-  border: 5px solid #ccc;
-  padding: 10px;
-  border-radius: 8px;
-  transition: background 0.3s ease;
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-light);
+  transition: transform 0.3s ease;
 }
 
-.options .option:hover {
-  background: linear-gradient(to right, #fff2aa, #fdecb2);
+.hamburger::before {
+  transform: translateY(-8px);
 }
 
-/* Age-specific Themes */
-
-/* ADULT: rounded font, aura background */
-.adult {
-  font-family: 'Segoe UI', sans-serif;
-  background: radial-gradient(circle at top left, #FFEE8C, #f7faff);
-  font-size: 5vw;   /* Use viewport-based font size */
+.hamburger::after {
+  transform: translateY(5px);
 }
 
-.adult h1, .adult p {
-  font-family: 'Quicksand', sans-serif;
-  border-radius: 10px;
+.nav-toggle_active .hamburger {
+  background: transparent;
 }
 
-/* TEENAGER: same font, light yellow background */
-.teen {
-  font-family: 'Segoe UI', sans-serif;
-  background: #FFEE8C;
-  font-size: 5vw;
-}
-
-/* CHILD: bold font with soft pastel gradient */
-.child {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #fff1f0, #f0fff4);
-  font-size: 5vw;
-}
-
-.child h1, .child p, .child .option {
-  font-weight: bold;
+.nav-toggle_active
 }
 
 
