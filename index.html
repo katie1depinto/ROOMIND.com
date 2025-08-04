@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Roomind Cover</title>
-  <!-- Make sure this path matches your folder structure -->
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Select a Category</title>
+  <style>
+    .buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 25px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
-
-  <div class="screen">
-    <div class="title">Roomind</div>
-    <div class="subtitle">
-      your privacy promised<br>
-      AI therapist<br>
-      Select your age category
-    </div>
-
-    <div class="buttons">
-      <button class="button" onclick="selectCategory('child')">child</button>
-      <button class="button" onclick="selectCategory('teen')">teen</button>
-      <button class="button" onclick="selectCategory('adult')">adult</button>
-    </div>
+  <div class="buttons">
+    <a href="child.html" class="button">Child</a>
+    <a href="teen.html" class="button">Teen</a>
+    <a href="adult.html" class="button">Adult</a>
   </div>
-
-  <script>
-    function selectCategory(category) {
-      alert('You selected: ' + category);
-    }
-  </script>
-
 </body>
 </html>
