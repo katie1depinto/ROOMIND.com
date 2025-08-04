@@ -1,26 +1,26 @@
-/* Reset */
+/* Reset box model & remove default spacing */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Pastel page background */
+/* Full-screen pastel background & center content */
 body {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f9f7f6;  /* very light pastel */
+  background: #f9f7f6;
   font-family: 'Segoe UI', sans-serif;
   color: #333;
 }
 
-/* “Screen” container */
+/* White “screen” container */
 .screen {
   width: 360px;
   padding: 24px;
-  background: #ffffff;
+  background: #fff;
   border: 3px solid #cfcfcf;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -32,12 +32,14 @@ body {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Titles */
+/* Main heading */
 .title {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
+
+/* Subtitle text */
 .subtitle {
   font-size: 0.95rem;
   line-height: 1.4;
@@ -45,24 +47,27 @@ body {
   color: #666;
 }
 
-/* Buttons */
+/* Button wrapper */
 .buttons {
   display: flex;
   gap: 12px;
+  justify-content: center;
 }
- .button {
-  display: block;
+
+/* Links styled as buttons */
+.button {
   flex: 1;
+  display: block;
   padding: 12px 0;
-  text-align: center;
   background: #eef2f5;
   border: 2px solid #cfcfcf;
   border-radius: 8px;
   font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s, border-color 0.3s;
   text-decoration: none;
   color: #333;
+  transition: background 0.3s, border-color 0.3s;
+  text-align: center;
+  cursor: pointer;
 }
 .button:hover {
   background: #d4e4f1;
