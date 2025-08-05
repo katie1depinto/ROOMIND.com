@@ -1,12 +1,82 @@
-<!-- child.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ROOMIND – Child</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* 1. Full-screen pastel gradient background */
+    body.child {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+    }
+
+    /* 2. Center card */
+    .container {
+      width: 360px;
+      padding: 24px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    /* 3. Header text */
+    .container header h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+    .container header p {
+      font-size: 1rem;
+      margin-bottom: 24px;
+      color: #555;
+    }
+
+    /* 4. Option buttons grid */
+    .options {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    /* 5. Buttons styling */
+    .option {
+      display: block;
+      padding: 14px 0;
+      background: #fff;
+      border: 2px solid #cfcfcf;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      color: #333;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      transition: background 0.3s, border-color 0.3s, transform 0.2s;
+    }
+    .option:hover {
+      background: #e6f7ff;
+      border-color: #8fbfe0;
+      transform: translateY(-2px);
+    }
+
+    /* 6. Footer note */
+    footer {
+      margin-top: 30px;
+      font-size: 0.8rem;
+      color: #777;
+    }
+    footer a {
+      color: #555;
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body class="child">
   <div class="container">
     <header>
@@ -15,17 +85,16 @@
     </header>
 
     <main class="options">
-      <div class="option">Talk to an AI therapist</div>
-      <div class="option">MIND ROOM</div>
-      <div class="option">Journal</div>
-      <div class="option">Sources</div>
+      <a href="ai-therapist.html" class="option">Talk to an AI therapist</a>
+      <a href="mind-room.html"      class="option">MIND ROOM</a>
+      <a href="journal.html"        class="option">Journal</a>
+      <a href="sources.html"        class="option">Sources</a>
     </main>
 
     <footer>
-      <p>© 2025 ROOMIND by Katie.  
-         Licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/">
-         CC BY-ND 4.0</a>.  
-         Share with credit, but do not modify.</p>
+      © 2025 ROOMIND by Katie.  
+      Licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank">CC BY-ND 4.0</a>.  
+      Share with credit, but do not modify.
     </footer>
   </div>
 </body>
