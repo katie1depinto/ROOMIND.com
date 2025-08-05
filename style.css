@@ -15,7 +15,26 @@ body {
   font-family: 'Segoe UI', sans-serif;
   color: #333;
 }
+.button-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
 
+.cat-sticker {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
 /* White “screen” container */
 .screen {
   width: 360px;
